@@ -44,7 +44,6 @@ function validarFormulario() {
     var dia = document.getElementById("dia").value;
     var mes = document.getElementById("mes").value;
     var anio = document.getElementById("anio").value;
-    var edad = document.getElementById("edad").value;
     var telefono = document.getElementById("telefono").value;
     var email = document.getElementById("email").value;
     var modulo = document.getElementById("modulo").value;
@@ -85,25 +84,6 @@ function validarFormulario() {
     var fechaNacimiento = new Date(anio, mes - 1, dia);
     if (fechaNacimiento.getDate() != dia || fechaNacimiento.getMonth() != (mes - 1)) {
         alert("Error: La fecha ingresada no es válida (ejemplo: 31 de febrero no existe)");
-        return false;
-    }
-    
-    // Validar que la fecha no sea del futuro
-    var fechaActual = new Date();
-    if (fechaNacimiento > fechaActual) {
-        alert("Error: La fecha de nacimiento no puede ser del futuro");
-        return false;
-    }
-    
-    // Validar que la edad no esté vacía
-    if (edad == "") {
-        alert("Error: El campo 'Edad' está vacío");
-        return false;
-    }
-    
-    // Validar que la edad esté en el rango permitido (15-100)
-    if (edad < 15 || edad > 100) {
-        alert("Error: La edad debe estar entre 15 y 100 años");
         return false;
     }
     
