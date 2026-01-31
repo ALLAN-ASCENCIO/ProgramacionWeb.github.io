@@ -1,0 +1,320 @@
+/* Estilos CSS globales para el formulario */
+
+/* Reseteo de estilos por defecto */
+* {
+    margin: 0;           /* Elimina márgenes por defecto */
+    padding: 0;          /* Elimina padding por defecto */
+    box-sizing: border-box;  /* Incluye padding y border en el ancho total */
+}
+
+body {
+    /* Fuente del sistema para mejor rendimiento y apariencia nativa */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;    /* Espaciado entre líneas para mejor legibilidad */
+    /* Gradiente de fondo oscuro azul */
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    min-height: 100vh;   /* Altura mínima de toda la ventana */
+    color: #333;
+}
+
+/* Header Principal */
+header {
+    background: linear-gradient(135deg, rgba(15, 32, 39, 0.95), rgba(44, 83, 100, 0.95));
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.95;
+}
+
+/* Navegación */
+nav {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;    /* Quita los puntos de la lista */
+    display: flex;       /* Usa flexbox para alinear horizontalmente */
+    justify-content: center;  /* Centra los elementos */
+    gap: 0;
+    padding: 0;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1.2rem 2rem;
+    color: #2c5364;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(135deg, #0f2027, #2c5364);
+    color: white;
+    border-bottom: 3px solid #00d4ff;
+}
+
+/* Contenedor Principal */
+#contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Secciones Generales */
+section {
+    background: white;
+    border-radius: 12px;
+    padding: 3rem;
+    margin: 2rem 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    color: #2c5364;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #00d4ff;
+    display: inline-block;
+}
+
+section p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Tarjetas de Módulos */
+.tarjeta {
+    background: linear-gradient(135deg, #e8f4f8 0%, #c7d8e0 100%);
+    border-radius: 10px;
+    padding: 2rem;
+    border-left: 5px solid #2c5364;
+    transition: all 0.3s ease;
+}
+
+.tarjeta:hover {
+    border-left: 5px solid #00d4ff;
+    background: linear-gradient(135deg, #d4f1f9 0%, #a8d8e6 100%);
+}
+
+.tarjeta h3 {
+    color: #2c5364;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.tarjeta h3:before {
+    content: "";
+    margin-right: 0;
+    font-size: 1.8rem;
+}
+
+.tarjeta p {
+    color: #444;
+    margin-bottom: 0.8rem;
+}
+
+.certificado {
+    background: #2c5364;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+/* Formulario */
+.formulario {
+    background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+    color: white;
+}
+
+.formulario h2 {
+    color: white;
+    border-bottom: 3px solid #00d4ff;
+}
+
+form {
+    margin-top: 2rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    background: rgba(255, 255, 255, 0.95);
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+    transform: scale(1.02);
+}
+
+input[type="submit"] {
+    background: white;
+    color: #2c5364;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover {
+    background: #00d4ff;
+    color: #0f2027;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2d3436 0%, #000000 100%);
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 12px;
+}
+
+footer h2 {
+    color: white;
+    border-bottom: 3px solid #00d4ff;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+footer p {
+    color: #dfe6e9;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #5fe4ff;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;  /* Reduce el tamaño del título principal */
+    }
+
+    nav ul {
+        flex-direction: column;  /* Apila los enlaces verticalmente */
+    }
+
+    nav ul li a {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 2rem 1.5rem;  /* Reduce el padding en móviles */
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    #contenedor {
+        padding: 1rem;
+    }
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.input-error {
+    border: 2px solid #ff6b6b !important;
+    background: #ffecec;
+}

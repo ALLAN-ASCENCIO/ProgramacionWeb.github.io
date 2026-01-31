@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--Aquí el encabezado del documento HTML-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro al Programa de Formación Integral | Allan Ascencio</title>
+    <link rel="stylesheet" href="formulario_estilos.css">
+</head>
+
+<!--Aquí el cuerpo de la página del formulario-->
+<body>
+    <header>
+        <h1>Programa de Formación Integral en Matemáticas y Desarrollo de Software</h1>
+        <p>Bienvenido al portal oficial de registro | Desarrolle su potencial con educación de excelencia</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#acerca">Programa Académico</a></li>
+            <li><a href="#modulos">Módulos</a></li>
+            <li><a href="#formulario">Registro</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div id="contenedor">
+        <section class="acerca" id="inicio">
+            <h2>Acerca del Programa</h2>
+            <p>
+                El Programa de Formación Integral dirigido por el profesor Allan Ascencio representa una oportunidad 
+                excepcional para adentrarse en el fascinante mundo de las ciencias exactas y el desarrollo de software. 
+                Este programa ha sido cuidadosamente diseñado para proporcionar una educación comprehensiva que abarca 
+                desde fundamentos matemáticos hasta la implementación práctica de soluciones tecnológicas.
+            </p>
+            <p>
+                Nuestro enfoque pedagógico combina la rigurosidad académica con la aplicación práctica, preparando 
+                a nuestros estudiantes para enfrentar los desafíos del mundo profesional actual. No pierda la oportunidad 
+                de formar parte de esta comunidad de aprendizaje de excelencia.
+            </p>
+        </section>
+
+        <section class="acerca" id="acerca">
+            <h2>Objetivos de Aprendizaje</h2>
+            <p>
+                El programa está estructurado para guiar a los estudiantes desde conceptos fundamentales hasta 
+                conocimientos avanzados en múltiples disciplinas. Los participantes desarrollarán competencias en:
+            </p>
+            <p>
+                <strong>Matemáticas Aplicadas:</strong> Desde fundamentos algebraicos hasta cálculo diferencial e integral, 
+                geometría analítica y estadística aplicada. Cada módulo está diseñado para fortalecer el pensamiento 
+                lógico, la capacidad analítica y la resolución creativa de problemas.
+            </p>
+            <p>
+                <strong>Desarrollo de Software:</strong> Dominio de lenguajes de programación fundamentales (C/C++) y 
+                tecnologías web (HTML/CSS), proporcionando las herramientas necesarias para conceptualizar, diseñar 
+                e implementar soluciones tecnológicas integrales.
+            </p>
+            <p>
+                Al finalizar el programa, los estudiantes estarán preparados para emprender proyectos ambiciosos 
+                y continuar su desarrollo profesional en el campo de la tecnología.
+            </p>
+        </section>
+
+        <section id="modulos">
+            <div class="tarjeta">
+                <h3>Módulo I: Fundamentos Matemáticos</h3>
+                <p>
+                    Este módulo comprende el estudio profundo de álgebra lineal, cálculo diferencial e integral, 
+                    geometría analítica y estadística aplicada. El objetivo es desarrollar el pensamiento crítico, 
+                    la creatividad analítica y las habilidades de razonamiento lógico esenciales para la programación 
+                    y la resolución de problemas complejos.
+                </p>
+                <p>
+                    <strong>Duración:</strong> 12 semanas | <strong>Nivel:</strong> Básico a Avanzado
+                </p>
+                <span class="certificado">Certificación Internacional Garantizada</span>
+            </div>
+        </section>
+
+        <section>
+            <div class="tarjeta">
+                <h3>Módulo II: Programación Backend (Lógica Computacional)</h3>
+                <p>
+                    Formación integral en lenguajes C/C++ enfocada en la construcción de algoritmos eficientes y elegantes. 
+                    El programa inicia con fundamentos de programación estructurada y progresa hacia conceptos avanzados 
+                    de estructuras de datos, optimización de código y diseño de algoritmos de nivel profesional.
+                </p>
+                <p>
+                    <strong>Duración:</strong> 16 semanas | <strong>Nivel:</strong> Básico a Profesional
+                </p>
+                <span class="certificado">Certificación Oracle & Microsoft</span>
+            </div>
+        </section>
+
+        <section>
+            <div class="tarjeta">
+                <h3>Módulo III: Desarrollo Frontend (Interfaz de Usuario)</h3>
+                <p>
+                    Capacitación especializada en tecnologías HTML5 y CSS3 para la creación de interfaces web 
+                    profesionales y responsivas. Los estudiantes desarrollarán un proyecto terminal funcional 
+                    que integra todos los conocimientos adquiridos, culminando con la certificación como 
+                    programador Full Stack.
+                </p>
+                <p>
+                    <strong>Duración:</strong> 10 semanas | <strong>Nivel:</strong> Intermedio a Avanzado
+                </p>
+                <span class="certificado">Proyecto Terminal + Certificación Full Stack</span>
+            </div>
+        </section>
+
+        <section class="acerca">
+            <h2>Proceso de Registro</h2>
+            <p>
+                El formulario de registro constituye el primer paso para acceder a nuestra plataforma educativa. 
+                Al completar su inscripción, obtendrá acceso inmediato a:
+            </p>
+            <p>
+                • Contenido completo del programa académico<br>
+                • Material didáctico descargable<br>
+                • Foros de discusión y comunidad de estudiantes<br>
+                • Sesiones en vivo con el instructor<br>
+                • Sistema de seguimiento de progreso personalizado
+            </p>
+            <p>
+                El registro es completamente gratuito y sin compromisos. Le invitamos a formar parte de nuestra 
+                comunidad académica y comenzar su transformación profesional hoy mismo.
+            </p>
+        </section>
+
+        <section class="formulario" id="formulario">
+            <h2>Formulario de Registro</h2>
+            <p>Complete los siguientes datos para crear su cuenta y acceder al programa:</p>
+
+            <!-- Formulario con validación JavaScript -->
+            <form id="registroForm" onsubmit="return validarFormulario()">
+                <label for="nombre">Nombre Completo*</label>
+                <input type="text" id="nombre" name="nombre_" placeholder="Ingrese su nombre completo">
+
+                <label for="dia">Fecha de Nacimiento*</label>
+                <div style="display: flex; gap: 0.5rem;">
+                    <select id="dia" name="dia" style="flex: 1;">
+                        <option value="">Día</option>
+                    </select>
+                    
+                    <select id="mes" name="mes" style="flex: 2;">
+                        <option value="">Mes</option>
+                    </select>
+                    
+                    <select id="anio" name="anio" style="flex: 1.5;">
+                        <option value="">Año</option>
+                    </select>
+                </div>
+
+                <label for="edad">Edad*</label>
+                <input type="number" id="edad" name="edad" placeholder="Ingrese su edad" min="15" max="100">
+
+                <label for="telefono">Número Telefónico*</label>
+                <input type="tel" id="telefono" name="telefono_" placeholder="Ingrese su número de contacto (10 dígitos)">
+
+                <label for="email">Dirección de Correo Electrónico*</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+
+                <label for="modulo">Módulo de Interés*</label>
+                <select id="modulo" name="modulo">
+                    <option value="">-- Seleccione un módulo --</option>
+                    <option value="matematicas">Módulo I: Fundamentos Matemáticos</option>
+                    <option value="backend">Módulo II: Programación Backend</option>
+                    <option value="frontend">Módulo III: Desarrollo Frontend</option>
+                    <option value="completo">Programa Completo</option>
+                </select>
+
+                <label for="horario">Horario Preferido*</label>
+                <select id="horario" name="horario">
+                    <option value="">-- Seleccione un horario --</option>
+                    <option value="matutino">Matutino (8:00 - 12:00)</option>
+                    <option value="vespertino">Vespertino (14:00 - 18:00)</option>
+                    <option value="nocturno">Nocturno (18:00 - 22:00)</option>
+                </select>
+
+                <label for="contrasena">Contraseña de Acceso*</label>
+                <input type="password" id="contrasena" name="contrasena_" placeholder="Mínimo 8 caracteres">
+
+                <input type="submit" value="Completar Registro">
+            </form>
+        </section>
+
+        <footer class="contacto" id="contacto">
+            <h2>Información de Contacto</h2>
+            <p>Para consultas, aclaraciones o información adicional, puede comunicarse con nosotros a través de los siguientes canales oficiales:</p>
+            <p><strong>Correo Electrónico:</strong> <a href="mailto:allanascencio@gmail.com">allanascencio@gmail.com</a></p>
+            <p><strong>Teléfono:</strong> <a href="tel:+521234567890">+52 123 456 7890</a></p>
+            <p style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #555;">
+                &copy; 2026 Allan Ascencio - Programa de Formación Integral | Todos los derechos reservados.
+            </p>
+        </footer>
+    </div>
+
+    <!-- Script de validación -->
+    <script src="validacion.js"></script>
+</body>
+</html>
