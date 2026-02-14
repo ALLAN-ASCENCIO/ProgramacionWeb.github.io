@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Async/Await</title>
+    <link rel="stylesheet" href="estilos-archivo.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Async/Await</h1>
+
+        <!-- EJERCICIO 1 -->
+        <div class="card">
+            <h2>Ejercicio 1: setTimeout() con Async/Await</h2>
+
+            <button onclick="ejecutarCallbackTradicional()">Callback Tradicional</button>
+            <button onclick="ejecutarAsyncAwait()">Async/Await</button>
+
+            <h3>Resultado:</h3>
+            <div id="output1" class="output">
+                <p>Presiona un botón para ejecutar...</p>
+            </div>
+        </div>
+
+        <!-- EJERCICIO 2 -->
+        <div class="card">
+            <h2>Ejercicio 2: Consulta API con Async/Await</h2>
+
+            <button onclick="consultarAPI()">Consultar API</button>
+            <button onclick="consultarMonedas()">Consultar Tipo de Cambio</button>
+            <button onclick="limpiarResultados()">Limpiar Resultados</button>
+
+            <h3>Resultado:</h3>
+            <div id="output2" class="output">
+                <p>Presiona el botón para consultar la API...</p>
+            </div>
+        </div>
+
+        <!-- CONSOLA VISUAL -->
+        <div class="card">
+            <h2>Consola Visual</h2>
+            <div id="consolaHTML" class="output consola"></div>
+            <button onclick="limpiarConsola()">Limpiar Consola</button>
+        </div>
+
+    </div>
+
+    <script src="script-archivo.js"></script>
+</body>
+</html>
